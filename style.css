@@ -72,7 +72,8 @@ input[type="text"] {
   transform: translateX(-50%);
 }
 .alert.success {
-  background: rgb(68, 218, 255);
+  color: #39cd5e;
+  background: rgb(162 244 186 / 73%);
 }
 .alert.reject {
   background: lightsalmon;
