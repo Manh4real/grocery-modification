@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 80vh;
+}
+.title {
+  font-family: "Alegreya SC", serif;
+  font-size: 1.5rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+button {
+  cursor: pointer;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+}
+.input-submit {
+  height: 30px;
+  position: relative;
+}
+.cancel-btn {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  font-size: 12px;
+  border: 1px solid #555;
+  border-radius: 2px;
+  transform: translateY(100%);
+  padding: 5px;
+}
+.submit-btn {
+  padding: 5px;
+  color: #333;
+  font-family: initial;
+}
+input[type="text"] {
+  padding: 0 10px;
+  width: 16rem;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 60vh;
+}
+.content-container .content {
+  margin: 8rem auto 0 auto;
+  padding: 25px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  border-radius: 15px;
+  position: relative;
+}
+.content .alert {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  border-radius: 7px;
+  padding: 7px 30px;
+  color: white;
+  font-weight: bold;
+  transform: translateX(-50%);
+}
+.alert.success {
+  background: rgb(68, 218, 255);
+}
+.alert.reject {
+  background: lightsalmon;
+}
+.alert.edited {
+  background: lightgreen;
+}
+.alert.deleted {
+  background: rgb(255, 112, 112);
+}
+.alert.clear {
+  background: rgb(255, 75, 75);
+}
+.title {
+  margin-bottom: 4rem;
+}
+.list-container {
+  padding: 20px;
+  border-radius: 5px;
+  border: 3px solid #777;
+  margin-top: 3rem;
+  /* display: none; */
+  visibility: hidden;
+  position: relative;
+}
+.clear-btn {
+  position: absolute;
+  top: -7px;
+  right: 0;
+  transform: translateY(-100%);
+  font-size: 11px;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background: rgb(248, 74, 74);
+  padding: 4px;
+}
+.list .item:nth-child(2n + 1) {
+  background-color: lightgray;
+  border-radius: 7px;
+}
+.item {
+  width: 350px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-indent: 1.5rem;
+}
+.item-name {
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #555;
+  font-weight: 600;
+}
+.modifying-btn {
+  width: 90px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.modifying-btn button {
+  padding: 5px 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 11px;
+}
